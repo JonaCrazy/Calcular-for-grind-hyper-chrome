@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('img/hypers.png') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+  color: #007bff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(224, 234, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow:
+    0 0 10px #007bffaa,
+    0 0 20px #007bff77,
+    0 0 30px #007bff44;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  color: #0056b3;
+  text-shadow:
+    0 0 5px #007bff,
+    0 0 10px #007bffbb;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #004085;
+  text-shadow: 0 0 3px #007bff88;
+  text-align: left;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background-color: #ffffff;
+  color: #004085;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px #007bff33;
+  transition: border-color 0.3s ease;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 8px #0056b3;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 10px #007bff,
+    0 0 20px #0056b3;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow:
+    0 0 20px #0056b3,
+    0 0 40px #003d80;
+}
+
+button.limpar {
+  margin-top: 10px;
+  background-color: #dc3545;
+  box-shadow:
+    0 0 10px #dc3545,
+    0 0 20px #a71d2a;
+}
+
+button.limpar:hover {
+  background-color: #a71d2a;
+  box-shadow:
+    0 0 20px #a71d2a,
+    0 0 40px #6b1118;
+}
+
+#resultado {
+  margin-top: 25px;
+  background: #d6e0ff;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #003d80;
+  min-height: 80px;
+  white-space: pre-wrap;
+  text-align: left;
+  box-shadow:
+    inset 0 0 10px #007bff33;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 95vw;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
